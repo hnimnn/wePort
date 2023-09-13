@@ -5,8 +5,8 @@ import LandingPage from "./Pages/LandingPage/LandingPage";
 import HomePage from "./Pages/HomePage/HomePage";
 
 function App() {
-	return (
-		<BrowserRouter>
+  return (
+    <BrowserRouter>
       <Routes>
         <Route path="/landingPage" element={<LandingPage />}>
         </Route>
@@ -14,7 +14,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-	);
+  );
 }
 
 export default App;
