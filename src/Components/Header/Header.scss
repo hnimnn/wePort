@@ -38,6 +38,18 @@
       display: flex;
       justify-content: space-between;
     }
+    .btn-wallet{
+      background: linear-gradient(90deg, rgb(255, 143, 119) 0%, rgb(255, 86, 187) 100%);
+      border: none;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      font-size: 1.3rem;
+      font-weight: 600;
+      height: 40px;
+      width: 150px;
+    }
 }
 
 //responsive PC
@@ -55,7 +67,7 @@
     max-width: 310px;
   }
   .btn-responsive-mobile{
-    display: none;
+    display: none !important;
   }
 }
 
@@ -66,7 +78,7 @@
     display: none !important;
   }
   .btn-responsive-PC{
-    display: none;
+    display: none !important;
   }
   .wrapper  {   
     a{
@@ -97,6 +109,6 @@
     display: none;
   }
   .btn-responsive-PC{
-    display: none;
+    display: none !important;
   }
 }
