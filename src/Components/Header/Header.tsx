@@ -3,15 +3,18 @@ import "./Header.scss";
 import logoHeader from "../../Assets/logoHeader.svg";
 import { IconButton,  } from "@mui/material";
 import Button from "./../Button/Button";
-import { WalletOutlined } from "@mui/icons-material";
-import EmailIcon from '@mui/icons-material/Email';
-import NotificationsIcon from '@mui/icons-material/Notifications';
+import { WalletOutlined, Email, Notifications, Subject } from "@mui/icons-material";
 import { grey } from '@mui/material/colors';
 import Avatar from '@mui/material/Avatar';
 export default function Header() {
   return (
     <div className="wrapper">
-    <img src={logoHeader} alt="Logo" className="logo" />
+      <div className="header-menu">
+        <IconButton aria-label="email" className="header-menu-btn">
+          <Subject sx={{ color: grey[900], fontSize: 26 }}/>
+        </IconButton>
+        <img src={logoHeader} alt="Logo" className="logo" />
+      </div>
     <div className="header-content">
     <nav className="header-nav">
       <ul>
@@ -25,21 +28,21 @@ export default function Header() {
     <div className="header-btn-container"> 
       <Button 
         onClick={() => console.log("Cook")}
-        icon= {<WalletOutlined />}
+        icon= {<WalletOutlined style={{fontSize:"22px"}}/>}
         content = "Wallet Connect"
         className="btn-responsive-PC btn-wallet"
         />
     <Button 
         onClick={() => console.log("Cook")}
-        icon= {<WalletOutlined />}
+        icon= {<WalletOutlined style={{fontSize:"17px"}}/>}
         content = "Wallet"
         className="btn-responsive-mobile btn-wallet"
         />
     <IconButton aria-label="email">
-      <EmailIcon sx={{ color: grey[900] }}/>
+      <Email sx={{ color: grey[900], fontSize: 17 }}/>
     </IconButton>
     <IconButton aria-label="notification">
-      <NotificationsIcon sx={{ color: grey[900] }}/>
+      <Notifications sx={{ color: grey[900], fontSize: 17 }}/>
     </IconButton>
     <Avatar className="avatar" alt="Remy Sharp" src="https://mpost.io/wp-content/uploads/image-7-17.jpg" />
     </div>
