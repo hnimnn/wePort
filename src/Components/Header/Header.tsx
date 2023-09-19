@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.scss";
-import logoHeader from "../../Assets/logoHeader.svg";
+import logoHeader from "../../Assets/SVG/logoHeader.svg";
 import { IconButton,  } from "@mui/material";
 import Button from "./../Button/Button";
 import { WalletOutlined, Email, Notifications, Subject } from "@mui/icons-material";
@@ -8,15 +8,15 @@ import { grey } from '@mui/material/colors';
 import Avatar from '@mui/material/Avatar';
 export default function Header() {
   return (
-    <div className="wrapper">
-      <div className="header-menu">
-        <IconButton aria-label="email" className="header-menu-btn">
+    <div className="wrapper-header">
+      <div className="menu">
+        <IconButton  className="menu-btn">
           <Subject sx={{ color: grey[900], fontSize: 26 }}/>
         </IconButton>
         <img src={logoHeader} alt="Logo" className="logo" />
       </div>
-    <div className="header-content">
-    <nav className="header-nav">
+    <div className="content">
+    <nav className="nav">
       <ul>
         <li><a href="/community">Community</a></li>
         <li><a href="/recruit">Recruit</a></li>
@@ -25,7 +25,7 @@ export default function Header() {
         <li><a href="/info">Info</a></li>
       </ul>
     </nav>
-    <div className="header-btn-container"> 
+    <div className="btn-container"> 
       <Button 
         onClick={() => console.log("Cook")}
         icon= {<WalletOutlined style={{fontSize:"22px"}}/>}
