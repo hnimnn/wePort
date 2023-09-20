@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 1360px;
     background-color: #fff;
-    padding: 2rem; 
+    padding: 2rem;
     margin: 0 auto;
     display: grid;
     overflow-y: scroll;
@@ -14,37 +14,38 @@
         font-weight: 700;
         text-align: center;
     }
-    .banner{
+    .banner-img{
         margin: 0 auto;
+        object-fit: cover;
         width: 813px;
         height: 512px;
     }
-}
-
-.wrapper-homepage:hover::-webkit-scrollbar-thumb {
+    &:hover::-webkit-scrollbar-thumb {
     z-index: 2;
     visibility: visible;
 }
 
-.wrapper-homepage::-webkit-scrollbar {
-    width: 8px;
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+        margin: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        background: #bdbdbd;
+        z-index: 1;
+        visibility: hidden;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #858585;
+    }
 }
 
-.wrapper-homepage::-webkit-scrollbar-track {
-    background: transparent;
-    margin: 5px;
-}
-
-.wrapper-homepage::-webkit-scrollbar-thumb {
-    border-radius: 8px;
-    background: #bdbdbd;
-    z-index: 1;
-    visibility: hidden;
-}
-
-.wrapper-homepage::-webkit-scrollbar-thumb:hover {
-    background: #858585;
-}
 
 .banner-scroll{
     width: 100%;
@@ -52,7 +53,7 @@
     position: relative;
 }
 
-.title-scroll-line1 { 
+.title-scroll-line1 {
     font-family: Syne;
     font-size: 60px;
     font-weight: 700;
@@ -63,7 +64,7 @@
     top: 10%;
 }
 
-.title-scroll-line2 { 
+.title-scroll-line2 {
     font-family: Syne;
     font-size: 60px;
     font-weight: 700;
