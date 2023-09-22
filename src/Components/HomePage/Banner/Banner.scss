@@ -1,0 +1,112 @@
+.banner{
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+    padding-top: 75px;
+    gap: 60px;
+    height: fit-content;
+    .title {
+        font-family: Syne;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+        padding: 0 20px;
+        max-width: 1360px;
+    }
+    .banner-img{
+        margin: 0 auto;
+        object-fit: cover;
+        width: 100%;
+        height: 512px;
+        background-image: url('../../../Assets/images/Banner.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        p{
+            color: #FFF;
+            text-align: center;
+            font-family: Syne;
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 150%;
+            margin-top: -250px;
+        }
+        svg {
+            position: absolute;
+            bottom: 150px;
+            width: 46px;
+            aspect-ratio: 46/56;
+            opacity: 0;
+        }
+    }
+    &:hover::-webkit-scrollbar-thumb {
+    z-index: 2;
+    visibility: visible;
+    }
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+        margin: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        background: #bdbdbd;
+        z-index: 1;
+        visibility: hidden;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #858585;
+    }
+}
+
+@media screen and (max-width: 992px) {
+     .banner {
+        padding-top: 30px;
+        gap: 30px;
+        .title {
+            font-size: 30px;
+        }
+        .banner-img {
+            height: 300px;
+            p {
+                font-size: 30px;
+            }
+            svg {
+                width: 30px;
+                bottom: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .banner {
+        padding-top: 30px;
+        gap: 30px;
+        .title {
+            font-size: 20px;
+        }
+        .banner-img {
+            height: 248px;
+            p {
+                font-size: 20px;
+            }
+            svg {
+                width: 20px;
+                bottom: 20px;
+            }
+        }
+    }
+}
