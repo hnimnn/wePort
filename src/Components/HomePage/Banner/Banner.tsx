@@ -109,13 +109,12 @@ const Banner = () => {
 
             }
             else {
-              spanElements[0].style.marginBottom = `-126px`;
+              spanElements[0].style.marginBottom = `-170px`;
               (pElements[0] as HTMLElement).style.marginTop = `65px`;
               (svgElements[0] as HTMLElement).style.opacity = `1`;
               (imgElements[0] as HTMLElement).style.maxWidth = `100%`;
               (imgElements[0] as HTMLElement).style.marginTop = `-123px`
               isNotAnimation = true
-              console.log('run', isNotAnimation);
 
             }
           }
