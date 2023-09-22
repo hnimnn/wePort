@@ -134,7 +134,7 @@ const Banner = () => {
   return (
     <>
       <section ref={ref} className='banner'>
-        <span className="title">The Perfect Place For UI/UX Talent and Enterprises! with Quality Servicesaa</span>
+        <span className="title">The Perfect Place For UI/UX Talent and Enterprises! with Quality Services</span>
         <div className="banner-img">
           <p>Let’s Take A Look <br />
             SHALL WE!</p>
