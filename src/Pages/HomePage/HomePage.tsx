@@ -1,6 +1,7 @@
 import React from "react";
 import "./HomePage.scss";
 import Header from "../../Components/Header/Header";
+import MostInteracted from "../../Components/MostInteracted/MostInteracted";
 import banner from "../../Assets/images/Banner.png";
 import ArrowDown from '../../Components/Icons/ArrowDown';
 const HomePage = () => {
@@ -18,6 +19,7 @@ const HomePage = () => {
       {/* <img src={banner} alt="Banner" className="banner-scroll" />
       <span className="title-scroll-line1">Let’s Take A Look</span>
       <span className="title-scroll-line2">SHALL WE!</span> */}
+      <MostInteracted/>
     </>
   );
 };

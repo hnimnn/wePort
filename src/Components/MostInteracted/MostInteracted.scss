@@ -1,0 +1,16 @@
+.interaction-component {
+    width: 100%;
+    margin: 0 auto;
+    .title-line {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .title {
+    font-family: Syne;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+    }
+}
