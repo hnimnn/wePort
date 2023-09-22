@@ -1,6 +1,9 @@
 import React from "react";
 import "./HomePage.scss";
 import Header from "../../Components/Header/Header";
+import MostInteracted from "../../Components/MostInteracted/MostInteracted";
+import banner from "../../Assets/images/Banner.png";
+import ArrowDown from '../../Components/Icons/ArrowDown';
 import Banner from '../../Components/HomePage/Banner/Banner';
 const HomePage = () => {
   return (
@@ -8,10 +11,8 @@ const HomePage = () => {
       <Header />
       <div className="wrapper-homepage">
         <Banner />
+        <MostInteracted/>
       </div>
-      {/* <img src={banner} alt="Banner" className="banner-scroll" />
-      <span className="title-scroll-line1">Let’s Take A Look</span>
-      <span className="title-scroll-line2">SHALL WE!</span> */}
     </>
   );
 };

@@ -1,0 +1,30 @@
+.interaction-component {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1360px;
+    padding: 2.4rem 2rem;
+    .title-line {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .title {
+    font-family: Syne;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .title {
+    font-size: 24px !important;
+   }
+}
+
+@media screen and (max-width: 576px) {
+   .title {
+    font-size: 22px !important;
+   }
+}
